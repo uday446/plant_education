@@ -1,3 +1,5 @@
+from wsgiref import simple_server
+
 from PIL import UnidentifiedImageError
 from flask import Flask, request, jsonify, render_template, Response
 import os
@@ -49,9 +51,10 @@ def predictRoute():
 
 
 #clApp = ClientApp()
-# #port = int(os.getenv("PORT"))
+#port = int(os.getenv("PORT"))
+port = int(os.getenv("PORT",5001))
 if __name__ == "__main__":
     clApp = ClientApp()
-    port = 9000
-    app.run(host='127.0.0.1', port=port)
-    #app.run(debug=True)
+    host = '0.0.0.0'
+    httpd = simple_server.make_server(host, port, app)
+    httpd.serve_forever()

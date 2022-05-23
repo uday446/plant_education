@@ -11,8 +11,7 @@ def dataBaseConnection():
         cloud_config = {
             'secure_connect_bundle': 'secure-connect-plant-recognition.zip'
         }
-        auth_provider = PlainTextAuthProvider("jFdztiKenZBkpDuwOaDsJuZA",
-                                              "3Zsa4pecJg317.azFByBNMrwziBA9eq6YA1c8fpDpA4I0TKLDYLbHeM04b40SD_sz-LDi_ZF.D0URIW9kyazYmbhg9u-J5X+cdNHzgGY0IS4BvjnjYmCEGD4rpOwYTxi")
+        auth_provider = PlainTextAuthProvider(os.environ.get("dbstr1"), os.environ.get("dbstr2"))
         cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
         session = cluster.connect('log')
     except ConnectionError:
