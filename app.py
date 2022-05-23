@@ -37,15 +37,15 @@ def predictRoute():
     except ValueError as val:
         print(val)
         insertIntoTable(val)
-        return Response("Value not found inside json data")
+        return [{"image": str(val)}]
     except KeyError as k:
         insertIntoTable(k)
-        return Response("Key value error incorrect key passed")
+        return [{"image": str(k)}]
     except UnidentifiedImageError as i:
-        insertIntoTable("File not Found")
+        return [{"image": str(i)}]
     except Exception as e:
         insertIntoTable(str(type(e).__name__)+str(__file__))
-        return Response(str(e))
+        return [{"image": str(e)}]
 
 
 #clApp = ClientApp()
