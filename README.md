@@ -24,7 +24,7 @@ Python programming language and frameworks such as NumPy, Pandas and Tensorflow 
 
 ## 👨🏻‍💻 Web App
 
-![alt text](https://github.com/uday446/uday446/blob/main/Web%20capture_9-11-2021_202651_forest-cover-classification.herokuapp.com.jpeg)
+![alt text](https://github.com/uday446/uday446/blob/main/Web capture_23-5-2022_162327_plant-education.herokuapp.com.jpeg)
 
 Our Web App Link: https://plant-education.herokuapp.com/
 
