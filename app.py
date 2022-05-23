@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, render_template, Response
 import os
 from flask_cors import CORS, cross_origin
 from com_in_ineuron_ai_utils.utils import decodeImage
-from plant_education.database import insertIntoTable
+from database import insertIntoTable
 from predict import plant
 
 os.putenv('LANG', 'en_US.UTF-8')

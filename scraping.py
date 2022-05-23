@@ -1,5 +1,5 @@
 import wikipedia
-from plant_education.database import insertIntoTable
+from database import insertIntoTable
 
 #classes = "ballon flower flower"
 

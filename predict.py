@@ -3,8 +3,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from com_in_ineuron_ai_utils.utils import load_classes_from_json
-from plant_education.database import insertIntoTable
-from plant_education.scraping import scrapper
+from database import insertIntoTable
+from scraping import scrapper
 
 
 class plant:
