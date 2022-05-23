@@ -18,8 +18,8 @@ jobs:
       - name: Build and push
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:push -a plant-recognition web
+        run: heroku container:push -a plant-education web
       - name: Release
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-        run: heroku container:release -a plant-recognition web
+        run: heroku container:release -a plant-education web
