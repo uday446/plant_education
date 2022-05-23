@@ -1,4 +1,4 @@
-# Plant_Education
+# Plant_Education_APP
 
 ## 💡 Problem Statement:
 
